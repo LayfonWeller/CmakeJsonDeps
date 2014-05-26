@@ -9,10 +9,13 @@ parse a json array (parsed by CmakeJsonParsing) and add has eternal projects dep
 Parse a json file, get the root to the arrays of deps.
 Pass this root to Json_Deps()
 
-`ParseJson (${PROJECT_SOURCE_DIR}/zzlib.json ROOT jsonRoot)
-GetElement (${jsonRoot} "dependencies" dep_path)
-GetArray (${dep_path} deps)
-Json_Deps(deps)`
+`ParseJson (${PROJECT_SOURCE_DIR}/zzlib.json ROOT jsonRoot)`
+
+`GetElement (${jsonRoot} "dependencies" dep_path)`
+
+`GetArray (${dep_path} deps)`
+
+`Json_Deps(deps)`
 
 
 ## Example
